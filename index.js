@@ -131,7 +131,7 @@ async function showBirds() {
             let img = $(`<img class="rounded-4" style="width: 100%; height: 100%;">`);
             let engTitle = $(`<h1 class="text-ligth mb-3"></h1>`);
             let mynTitle = $(`<h1 class="text-ligth mb-3"></h1>`);
-            let textHolder = $(`<p class="mt-2" style="font-size: 18px;"></p>`);
+            let textHolder = $(`<p class="mt-5" style="font-size: 18px;"></p>`);
 
             img.attr("src", selectedBird.ImagePath);
             engTitle.text(selectedBird.BirdEnglishName);
