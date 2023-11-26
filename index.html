@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birds</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/ec00f89d6d.js" crossorigin="anonymous"></script>
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="main-body container-fluid position-relative">
+
+        <!-- back button -->
+        <div class="btn btn-light rounded-5 position-absolute back-button d-none">
+            <i class="fa-solid fa-arrow-left"></i>
+        </div>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand navbar-dark">
+            <div class="container">
+                <!-- bird icon -->
+                <a href="" class="navbar-brand bird-icon">
+                    <img src="img/bird_icon.png" class=" bird-navbar" alt="">
+                </a>
+
+                <!-- navlinks -->
+                <!-- change this section in style with media query for responsive -->
+                <ul class="navbar-nav nav-links d-lg-flex">
+                    <button class="btn bg-light btn-close closeBtn p-2 d-lg-none d-block"></button>
+                    <li class="nav-item">
+                        <a href="" class="nav-link home active">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link birds">birds</a>
+                    </li>
+                </ul>
+
+                <!-- buttons -->
+                <button class="btn btn-secondary d-lg-block d-none py-3 px-4 flyBtn">Let's Fly</button>
+                <button class="btn btn-light d-lg-none d-sm-block toggleBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- main content -->
+        <section class="main-content d-block container mt-3">
+            <div class="row mb-4 g-5">
+                <!-- main bird placeholder -->
+                <div class="bg-dark col-md-6 col-12 p-5 rounded-5">
+                    <div class="Bird row">
+                        <div class="col-md-6 d-flex justify-content-center">
+                            <img src="img/bird-main-img.jpg" class="main-bird" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="mt-4">Bird</h4>
+                            <h2 class="mb-5">ငှက်</h2>
+                            <p>ငှက်သည် အမွေးအတောင် ရှိ၍ အတောင်ပံနှစ်ဖက်ရှိသော
+                                သွေးနွေးသတ္တဝါ အမျိုးအစားတွင်ပါဝင်သည်။
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- wiki placeholder -->
+                <div class="col-md-6 col-12">
+                    <div class="row">
+                        <div class="bg-dark col-12 pt-3 rounded-5 bird-defination">
+                            <p class="text-light text-truncate text">
+                                သို့သော် အားလုံး ပျံသန်းနိုင်စွမ်း မရှိကြပေ။အချို့ငှက်များသည်
+                                အလွန်အပြေးသန်သူများဖြစ်ကြပြီး
+                                အချို့ကတော့ အလွန်ရေကူး
+                                ကျွမ်းကျင်သူများ ဖြစ်ကြသည်။ ငှက်သည် ကျောရိုးရှိသတ္တဝါဖြစ်ပြီး ဥ,ဥတတ်သော
+                                သတ္တဝါအမျိုးအစားလည်း
+                                ဖြစ်သည်။ ဥက ပေါက်ဖွားလာသော
+                                ကလေးငယ်များကို စောင့်ရှောက်လေ့ ရှိကြသည်။
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row mt-1 g-4">
+                        <div class="col-md-6 col-12">
+                            <div class="card bg-dark rounded-5">
+                                <div class="mx-auto p-2">
+                                    <img src="img/bird-feather.png" class="feather">
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between
+                                     align-items-center mt-4">
+                                        <div>
+                                            <h4 class="card-title text-light">Wikipedia</h4>
+                                        </div>
+                                        <div><a href="https://en.wikipedia.org/wiki/Bird" target="_blank"
+                                                class="btn btn-secondary">See
+                                                More</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="userBox col-md-6 col-12">
+                            <div class="bg-dark rounded-5 user-card p-3">
+                                <div class="d-flex justify-content-center align-items-center mt-3 mb-2">
+                                    <a href="https://www.facebook.com/groups/2981496221911717/" target="_blank">
+                                        <div class="border border-1 px-3 py-2"
+                                            style="border-radius: 50%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+                                            <i class="fab fa-facebook-f text-light"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-center py-3">
+                                    <h4 class="text-light">Birds In Nature</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- numbers -->
+            <div class="row mt-4">
+                <!-- bird species -->
+                <div class="col-md-8 col-12">
+                    <div class="row">
+                        <div class="col-3 mb-4">
+                            <div class="card bg-dark p-4 rounded-4">
+                                <div class="card-body text-light text-center">
+                                    <h1 class="card-title mb-4">၈၆၀၀</h1>
+                                    <p class="card-text">
+                                        ငှက်အမျိုးပေါင်း
+                                    </p>
+                                    <p class="card-text">
+                                        (မျိုးစိတ်ပေါင်း)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mb-4">
+                            <div class="card bg-dark p-4 rounded-4">
+                                <div class="card-body text-light text-center">
+                                    <h1 class="card-title mb-4">၁၆၀၀</h1>
+                                    <p class="card-text">
+                                        ငှက်အမျိုးပေါင်း
+                                    </p>
+                                    <p class="card-text">
+                                        (မျိုးစုပေါင်း)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mb-4">
+                            <div class="card bg-dark p-4 rounded-4">
+                                <div class="card-body text-light text-center">
+                                    <h1 class="card-title mb-4">၁၅၅</h1>
+                                    <p class="card-text">
+                                        ငှက်အမျိုးပေါင်း
+                                    </p>
+                                    <p class="card-text">
+                                        (မျိုးရင်းပေါင်း)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mb-4">
+                            <div class="card bg-dark p-4 rounded-4">
+                                <div class="card-body text-light text-center">
+                                    <h1 class="card-title mb-4">၂၇</h1>
+                                    <p class="card-text">
+                                        ငှက်အမျိုးပေါင်း
+                                    </p>
+                                    <p class="card-text">
+                                        (မျိုးစိတ်ပေါင်း)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- find out -->
+                <div class="col-md-4 col-12">
+                    <div class="card bg-dark rounded-4">
+                        <div class="card-body">
+                            <h1 class="text-light findout">
+                                Let's <br>
+                                Explore <br>
+                                <span class="text-primary">Together.</span>
+                            </h1>
+                            <div class="text-end">
+                                <button class="btn btn-secondary exploreBtn">See More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- birds category -->
+        <section class="birds-category d-none container mt-3">
+            <div class="row bird-row">
+
+            </div>
+        </section>
+
+        <!-- bird description -->
+        <section class="birds-description d-none container mt-3">
+            <div class="row description-bird mt-5">
+
+            </div>
+        </section>
+    </main>
+
+    <!-- bootstrap js -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery -->
+    <script src="jquery-3.7.1.min.js"></script>
+    <!-- my js -->
+    <script src="index.js"></script>
+</body>
+
+</html>
